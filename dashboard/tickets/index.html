@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SupportHubPlus - Tickets</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="../logo.png" type="image/png">
+</head>
+<body>
+    <header>
+        <h1>Ticket Management</h1>
+    </header>
+
+    <main>
+        <section id="ticket-creator">
+            <h2>Create a New Ticket</h2>
+            <form id="ticket-form">
+                <div>
+                    <label for="ticket-title">Title:</label>
+                    <input type="text" id="ticket-title" name="title" required>
+                </div>
+                <div>
+                    <label for="ticket-description">Description:</label>
+                    <textarea id="ticket-description" name="description" required></textarea>
+                </div>
+                <button type="submit">Create Ticket</button>
+            </form>
+        </section>
+
+        <section id="open-tickets">
+            <h2>Your Open Tickets</h2>
+            <ul id="ticket-list">
+                <!-- Tickets will be dynamically added here -->
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 SupportHubPlus. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

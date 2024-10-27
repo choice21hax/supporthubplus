@@ -1,0 +1,103 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #333; /* Default to dark mode background */
+    color: #f0f0f0; /* Light text for dark mode */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for mode change */
+}
+
+body.light-mode {
+    background-color: #f0f0f0; /* Light mode background */
+    color: #333; /* Dark text for light mode */
+}
+
+header {
+    background-color: #444; /* Default to dark mode header */
+    color: #f0f0f0; /* Light text for dark mode */
+    text-align: center;
+    padding: 1em 0;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    border-bottom: 2px solid black;
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for mode change */
+}
+
+header.light-mode {
+    background-color: #f0f0f0; /* Light mode header */
+    color: #333; /* Dark text for light mode */
+}
+
+header h1, header p {
+    margin: 0;
+}
+
+#logo {
+    height: 80px;
+    margin-right: 20px;
+}
+
+#signup-button, #dark-mode-toggle, #features button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 10px; /* Space between buttons */
+    transition: background-color 0.3s;
+}
+
+#signup-button:hover, #dark-mode-toggle:hover, #features button:hover {
+    background-color: #555;
+}
+
+main {
+    padding: 20px;
+}
+
+#features {
+    margin-bottom: 20px;
+}
+
+#features h2 {
+    color: #f0f0f0; /* Default to light text for dark mode */
+}
+
+#features ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#features li {
+    background: #555; /* Default to dark gray for dark mode */
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s; /* Smooth transition for mode change */
+}
+
+body.light-mode #features li {
+    background: #d3d3d3; /* Light gray for light mode */
+}
+
+footer {
+    background-color: #444; /* Default to dark mode footer */
+    color: #f0f0f0; /* Light text for dark mode */
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    border-top: 2px solid black;
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for mode change */
+}
+
+footer.light-mode {
+    background-color: #f0f0f0; /* Light mode footer */
+    color: #333; /* Dark text for light mode */
+}

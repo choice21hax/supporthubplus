@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - SupportHubPlus</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="../logo.png" type="image/png">
+</head>
+<body>
+    <header>
+        <h1>Login to SupportHubPlus</h1>
+    </header>
+
+    <main>
+        <form id="login-form">
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit">Login</button>
+        </form>
+        <button id="receive-email-button">Receive Email</button>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 SupportHubPlus. All rights reserved.</p>
+    </footer>
+
+    <!-- Modal for receiving email -->
+    <div id="email-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>Enter your email</h2>
+            <input type="email" id="modal-email" placeholder="Enter your email" required>
+            <button id="send-code-button">Send Code</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
