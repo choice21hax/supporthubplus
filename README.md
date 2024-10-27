@@ -24,17 +24,23 @@ Follow these steps to set up the project on your local machine:
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/yourusername/supporthubplus.git
+   git clone https://github.com/choice21hax/supporthubplus.git
+   cd supporthubplus
+   ```
+   or
+   ```bash
+   wget https://github.com/choice21hax/supporthubplus/archive/refs/heads/main.zip
+   unzip main.zip
    cd supporthubplus
    ```
 
-2. **Install Dependencies**:
+3. **Install Dependencies**:
    Navigate to the project directory and install the necessary Node.js packages:
    ```bash
    npm install
    ```
 
-3. **Configure Environment Variables**:
+4. **Configure Environment Variables**:
    Create a `.env` file in the root directory and add the following environment variables:
    ```plaintext
    MONGODB_URI=mongodb://localhost:27017/supporthubplus
@@ -43,13 +49,13 @@ Follow these steps to set up the project on your local machine:
    EMAIL_PASS=your-email-password
    ```
 
-4. **Start the Server**:
+5. **Start the Server**:
    Run the following command to start the server:
    ```bash
    npm start
    ```
 
-5. **Access the Application**:
+6. **Access the Application**:
    Open your web browser and go to `http://localhost:3000` to access the application.
 
 ## Features
